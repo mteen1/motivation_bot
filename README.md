@@ -1,1 +1,1 @@
-this is fun personal project
+this is a fun personal project
