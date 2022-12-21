@@ -7,7 +7,8 @@ from telegram.ext.commandhandler import CommandHandler
 from telegram.ext.messagehandler import MessageHandler
 from telegram.ext.filters import Filters
 
-updater = Updater("5825858999:AAGgDu8kujOyN9OUtdOZJzP3ERz87cH3ZZ8", use_context=True)
+Token = ?
+updater = Updater(f"{token}", use_context=True)
 
 # sticker objects
 giga_stick = telegram.Sticker(file_unique_id='AgADSg4AAs9V8VM',
