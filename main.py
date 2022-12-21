@@ -85,11 +85,16 @@ def stick_handler(update: Update, context: CallbackContext):
     print("file_unique_id: " + str(update.message.sticker))
 
 
+def hack(update: Update, context: CallbackContext):
+    update.message.reply_text("I'm not hackable bitch")
+    update.message.reply_sticker(giga_stick)
+
 updater.dispatcher.add_handler(CommandHandler('start', start))
 updater.dispatcher.add_handler(CommandHandler('help', help))
 updater.dispatcher.add_handler(CommandHandler('linkedin', linkedIn_url))
 updater.dispatcher.add_handler(CommandHandler('email', email_url))
 updater.dispatcher.add_handler(MessageHandler(Filters.regex('wisdom') | Filters.regex('gigachad'), gigachad))
+updater.dispatcher.add_handler(MessageHandler(Filters.regex('hack'), hack))
 updater.dispatcher.add_handler(MessageHandler(Filters.command, unknown))
 updater.dispatcher.add_handler(MessageHandler(Filters.sticker, stick_handler))
 updater.dispatcher.add_handler(MessageHandler(Filters.text, unknown))
