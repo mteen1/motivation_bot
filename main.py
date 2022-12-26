@@ -7,7 +7,7 @@ from telegram.ext.commandhandler import CommandHandler
 from telegram.ext.messagehandler import MessageHandler
 from telegram.ext.filters import Filters
 
-updater = Updater("5825858999:AAGgDu8kujOyN9OUtdOZJzP3ERz87cH3ZZ8", use_context=True)
+updater = Updater("5825858999:AAGqehwg83Uj_sXDwTwwJcsWzg2RyWDd2-k", use_context=True)
 
 # sticker objects
 giga_stick = telegram.Sticker(file_unique_id='AgADSg4AAs9V8VM',
@@ -70,7 +70,7 @@ def gigachad(update: Update, context: CallbackContext):
               "No pressure, no diamonds.",
               "We will either find a way, or make one.",
               "Make each day your masterpiece.",
-              "tay hungry. Stay foolish.",
+              "stay hungry. Stay foolish.",
               "Dream big and dare to fail.",
               "Every moment is a fresh beginning.",
               "No guts, no story.",
@@ -88,6 +88,7 @@ def stick_handler(update: Update, context: CallbackContext):
 def hack(update: Update, context: CallbackContext):
     update.message.reply_text("I'm not hackable bitch")
     update.message.reply_sticker(giga_stick)
+
 
 updater.dispatcher.add_handler(CommandHandler('start', start))
 updater.dispatcher.add_handler(CommandHandler('help', help))
