@@ -6,8 +6,9 @@ from telegram.ext.callbackcontext import CallbackContext
 from telegram.ext.commandhandler import CommandHandler
 from telegram.ext.messagehandler import MessageHandler
 from telegram.ext.filters import Filters
+from bot_token import bot_token
 
-updater = Updater("5825858999:AAGqehwg83Uj_sXDwTwwJcsWzg2RyWDd2-k", use_context=True)
+updater = Updater(f"{bot_token}", use_context=True)
 
 # sticker objects
 giga_stick = telegram.Sticker(file_unique_id='AgADSg4AAs9V8VM',
