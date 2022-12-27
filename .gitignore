@@ -1,0 +1,6 @@
+#ignore bot token
+bot_token.py
+#ignore cache files
+__pycache__/
+
+
