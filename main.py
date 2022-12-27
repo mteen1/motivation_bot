@@ -10,7 +10,7 @@ from bot_token import bot_token
 
 updater = Updater(f"{bot_token}", use_context=True)
 
-# sticker objects
+# stickers objects
 giga_stick = telegram.Sticker(file_unique_id='AgADSg4AAs9V8VM',
                               file_id='CAACAgQAAxkBAAPYY6A3Pyq0sLoW-1nEbGAGJu4or0sAAkoOAALPVfFTgWfInAT1m_4sBA',
                               width=10, height=398, is_animated=False, type='regular', is_video=True)
